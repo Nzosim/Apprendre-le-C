@@ -12,7 +12,7 @@ void main(){
     char c = 'a';
 
     /*
-    * 2) UNSIGNED
+    * 2) LES VARIABLES UNSIGNED
     */
     unsigned int ui = 0;
     unsigned long ul = 0; // unsigned permet de stocker uniquement des valeurs positives

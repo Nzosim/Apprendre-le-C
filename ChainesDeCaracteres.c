@@ -24,7 +24,7 @@ void main(){
     printf("2) La chaine de caractere vaut : %s\n", chaine2);
 
     /*
-    * 3) LIRE UNE CHAINE DE CARACTERES
+    * 3) LIRE UNE CHAINE DE CARACTERE
     */
     char ch[100];
     printf("3) Veuillez entrer un mot : ");
