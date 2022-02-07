@@ -42,3 +42,10 @@
     3) Lire une chaine de caractère
     4) Ecrire dans une chaine
     5) Fonctions sur les chaines
+
+[8. Les Structures](https://github.com/Nzosim/Apprendre-le-C/blob/main/Structures.c)
+
+    1) Définir une structure
+    2) Utiliser une structure
+    3) Utiliser une structure dans une fonction
+    4) Les énumérations
