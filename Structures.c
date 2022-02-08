@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-    /*
-    * 1) DEFINIR UNE STRUCTURE
-    */
-    struct MaStructure{ // le noms d'une structure commence toujour par une majuscule
-        int valeur;
-    };
-    typedef struct MaStructure MaStructure; // permet de ne pas mettre struct devant chaque nouvelle variable créer
+/*
+* 1) DEFINIR UNE STRUCTURE
+*/
+struct MaStructure{ // le noms d'une structure commence toujour par une majuscule
+    int valeur;
+};
+typedef struct MaStructure MaStructure; // permet de ne pas mettre struct devant chaque nouvelle variable créer
 
-    void carre(MaStructure *var);
+void carre(MaStructure *var);
 
 void main(){
     
