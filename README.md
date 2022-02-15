@@ -49,3 +49,13 @@
     2) Utiliser une structure
     3) Utiliser une structure dans une fonction
     4) Les énumérations
+
+[9. Les Listes Chainees](https://github.com/Nzosim/Apprendre-le-C/blob/main/ListesChainees.c)
+    
+    1) Définir un type chaine
+    2) Initialiser une liste chainee
+    3) Ajouter un element en tete de liste
+    4) Ajouter un element en queue de liste
+    5) Supprimer un element en tete de liste
+    6) Supprimer un element en queue de liste
+    7) Afficher une liste chainee
