@@ -47,18 +47,35 @@ Chaine intail(Chaine c, int v){
 * 5) SUPPRESSION UN ELEMENT EN TETE
 */
 Chaine suphead(Chaine c){
-    return c->suivant == NULL ? NULL : c->suivant; // retourne le deuxieme maillon de la liste si il existe
+    if(c == NULL){
+        return NULL;
+    }
+    Chaise nc = c->suivant;
+    free(c); // free permet de liberer la place qui n'est plus utilisé 
+    return nc;
 }
 
 /*
 * 6) SUPPRESSION UN ELEMENT EN QUEUE
 */
 Chaine suptail(Chaine c){
-    Chaine res = c;
+    if(c == NULL){
+        return NULL;
+    }
+    if(c->suivant == NULL){
+        free(c);
+        return NULL;
+    }
+
+    Chaine res = c->suivant;
+    Chaine f = c;
     while(res->suivant->suivant != NULL){ // boucle qui permet d'acceder à la fin de la liste
         res = res->suivant;
+        f = f->suivant;
     }
-    res->suivant = init(); // remet le dernier maillon à null
+    
+    free(res);
+    f->suivant = NULL; // remet le dernier maillon à null
     return c;
 }
 
