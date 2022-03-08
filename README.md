@@ -60,7 +60,7 @@
     6) Supprimer un element en queue de liste
     7) Afficher une liste chainee
 
-[9. Les Fichiers](https://github.com/Nzosim/Apprendre-le-C/blob/main/Fichiers.c)
+[10. Les Fichiers](https://github.com/Nzosim/Apprendre-le-C/blob/main/Fichiers.c)
 
     1) Déclarer un fichier
     2) Ouvrir un fichier texte
@@ -72,3 +72,10 @@
     8) Fermer un fichier texte ou binaire
     9) Renomer ou supprimer un fichier
     10) Les positions dans un fichier
+
+[11. Les Signaux](https://github.com/Nzosim/Apprendre-le-C/blob/main/Signaux.c)
+
+    1) Recevoir un signal
+    2) Attendre un signal
+    3) Envoyer un signal
+    4) S'envoyer un signal
