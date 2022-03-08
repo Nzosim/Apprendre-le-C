@@ -50,7 +50,7 @@ Chaine suphead(Chaine c){
     if(c == NULL){
         return NULL;
     }
-    Chaise nc = c->suivant;
+    Chaine nc = c->suivant;
     free(c); // free permet de liberer la place qui n'est plus utilisé 
     return nc;
 }
