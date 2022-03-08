@@ -8,6 +8,7 @@ FILE * fichier;
 
 void main(){
     int valeur;
+    char ch[10];
 
     /*
     * 2) OUVRIR UN FICHIER TEXTE
@@ -31,6 +32,8 @@ void main(){
     * 4) LIRE DANS UN FICHIER TEXTE
     * EOF indique la fin d'un fichier
     */
+    fgetc(fichier); // lire un caractère
+    fgets(ch, 10, fichier); // lit 10 caractères de fichier
     fscanf(fichier, "%d", &valeur); // 1er argument : le fichier, 2eme : le type de valeur, 3eme : l'adresse de la variable 
 
     /*
@@ -42,7 +45,9 @@ void main(){
     /*
     * 6) ECRIRE DANS UN FICHIER TEXTE
     */
-    fprintf(fichier, "%d", valeur); 
+    fputc('A',fichier); // ecrire un caractère
+    fputs("AKUNAMATATA", fichier); // ecrire une chaîne
+    fprintf(fichier, "%d", valeur); // ecrire chaîne formatée
 
     /*
     * 7) ECRIRE DANS UN FICHIER BINAIRE
@@ -52,6 +57,21 @@ void main(){
     /*
     * 8) FERMER UN FICHIER TEXTE OU UN FICHIER TEXTE
     */
-    fclose(fichier);
+    fclose(fichier); // return 0 si cela a marché sinon EOF
+
+    /*
+    * 9) RENAME OU DELETE UN FICHIER
+    */
+    rename("ancierNom", "nouveauNom");
+    remove(fichier);
+
+    /*
+    * 10) POSITION DANS UN FICHIER
+    */
+    ftell(fichier); // renvoie le position actuelle
+    fseek(fichier, 5, SEEK_SET); // deplace le curseur de 5 depuis le debut, SEEK_CUR = position actuelle,  SEEK_END = fin du fichier
+    rewind(fichier); // deplace le curseur à la position 0
+
+    
 
 }

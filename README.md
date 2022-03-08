@@ -59,3 +59,16 @@
     5) Supprimer un element en tete de liste
     6) Supprimer un element en queue de liste
     7) Afficher une liste chainee
+
+[9. Les Fichiers](https://github.com/Nzosim/Apprendre-le-C/blob/main/Fichiers.c)
+
+    1) Déclarer un fichier
+    2) Ouvrir un fichier texte
+    3) Ouvrir un fichier binaire
+    4) Lire dans un fichier texte
+    5) Lire dans un fichier binaire
+    6) Ecrire un fichier texte
+    7) Ecrire un fichier binaire
+    8) Fermer un fichier texte ou binaire
+    9) Renomer ou supprimer un fichier
+    10) Les positions dans un fichier
